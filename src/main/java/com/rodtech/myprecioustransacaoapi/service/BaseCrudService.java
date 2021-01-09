@@ -10,5 +10,6 @@ public interface BaseCrudService<T extends BaseModel, ID> {
     List<T> buscarTodos(Pageable pageable);
     T incluir(T entity);
     T atualizar(T entity);
+    List<T> salvaLote(List<T> lote);
     void excluir(ID id);
 }

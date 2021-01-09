@@ -39,6 +39,11 @@ public abstract class BaseCrudServiceImpl<T extends BaseModel, ID, R extends Mon
     }
 
     @Override
+    public List<T> salvaLote(List<T> lote) {
+        return repositorio.saveAll(lote);
+    }
+
+    @Override
     public void excluir(ID id) {
         T entityDb = buscarPorId(id);
         repositorio.delete(entityDb);

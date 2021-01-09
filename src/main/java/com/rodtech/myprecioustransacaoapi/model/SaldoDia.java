@@ -1,6 +1,5 @@
 package com.rodtech.myprecioustransacaoapi.model;
 
-import com.rodtech.myprecioustransacaoapi.utils.EntidadeUtils;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
